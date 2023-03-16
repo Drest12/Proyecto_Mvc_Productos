@@ -1,0 +1,58 @@
+﻿@model PrjProductosMVC.Models.Producto
+
+@{
+    ViewBag.Title = "DetailsProducto";
+}
+
+<h2>DetailsProducto</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codprod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codprod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomprod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomprod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechareg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechareg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.suspendido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.suspendido)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Regresar al Listado", "IndexProducto")
+</p>
